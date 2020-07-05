@@ -1,0 +1,139 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:TL072 IC2
+U 2 1 5E69549C
+P 6700 4200
+F 0 "IC2" H 6700 4567 50  0000 C CNN
+F 1 "TL072" H 6700 4476 50  0000 C CNN
+F 2 "" H 6700 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6700 4200 50  0001 C CNN
+	2    6700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 IC2
+U 3 1 5E696F1A
+P 9850 1100
+F 0 "IC2" H 9808 1146 50  0000 L CNN
+F 1 "TL072" H 9808 1055 50  0000 L CNN
+F 2 "" H 9850 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9850 1100 50  0001 C CNN
+	3    9850 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5E6A38BC
+P 4500 3450
+F 0 "R14" V 4293 3450 50  0000 C CNN
+F 1 "33K" V 4384 3450 50  0000 C CNN
+F 2 "" V 4430 3450 50  0001 C CNN
+F 3 "~" H 4500 3450 50  0001 C CNN
+	1    4500 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5E6A4C1C
+P 3650 3450
+F 0 "C5" V 3398 3450 50  0000 C CNN
+F 1 "2n2" V 3489 3450 50  0000 C CNN
+F 2 "" H 3688 3300 50  0001 C CNN
+F 3 "~" H 3650 3450 50  0001 C CNN
+	1    3650 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 4200 4050 3450
+Wire Wire Line
+	3800 3450 4050 3450
+Connection ~ 4050 3450
+$Comp
+L Device:R R15
+U 1 1 5E6A6BC6
+P 3100 4100
+F 0 "R15" V 2893 4100 50  0000 C CNN
+F 1 "1K2" V 2984 4100 50  0000 C CNN
+F 2 "" V 3030 4100 50  0001 C CNN
+F 3 "~" H 3100 4100 50  0001 C CNN
+	1    3100 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 4100 2650 3450
+Wire Wire Line
+	2650 3450 3250 3450
+Wire Wire Line
+	4350 3450 4050 3450
+$Comp
+L Device:Q_NJFET_DGS Q2
+U 1 1 5E6AAD21
+P 3650 2750
+F 0 "Q2" V 3885 2750 50  0000 C CNN
+F 1 "Q_NJFET_DGS" V 3976 2750 50  0000 C CNN
+F 2 "" H 3850 2850 50  0001 C CNN
+F 3 "~" H 3650 2750 50  0001 C CNN
+	1    3650 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2850 3250 2850
+Wire Wire Line
+	3250 2850 3250 3450
+Connection ~ 3250 3450
+Wire Wire Line
+	3250 3450 3500 3450
+Wire Wire Line
+	3850 2850 4050 2850
+Wire Wire Line
+	4050 2850 4050 3450
+Wire Wire Line
+	4650 3450 4850 3450
+Wire Wire Line
+	4850 3450 4850 2550
+Wire Wire Line
+	4850 2550 3650 2550
+$Comp
+L Device:D D2
+U 1 1 5E6B3EE4
+P 5200 3450
+F 0 "D2" H 5200 3234 50  0000 C CNN
+F 1 "D" H 5200 3325 50  0000 C CNN
+F 2 "" H 5200 3450 50  0001 C CNN
+F 3 "~" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	-1   0    0    1   
+$EndComp
+Connection ~ 4850 3450
+Wire Wire Line
+	5050 3450 4850 3450
+$Comp
+L Amplifier_Operational:TL072 IC2
+U 1 1 5E6940C1
+P 3750 4200
+F 0 "IC2" H 3750 3833 50  0000 C CNN
+F 1 "TL072" H 3750 3924 50  0000 C CNN
+F 2 "" H 3750 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3750 4200 50  0001 C CNN
+	1    3750 4200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2650 4100 2950 4100
+Wire Wire Line
+	3250 4100 3450 4100
+$EndSCHEMATC
