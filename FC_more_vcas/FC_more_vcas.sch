@@ -50,8 +50,8 @@ $Comp
 L Amplifier_Operational:LM13700 U1
 U 5 1 5E74031E
 P 5250 6950
-F 0 "U1" H 5208 6996 50  0000 L CNN
-F 1 "LM13700" H 5208 6905 50  0000 L CNN
+F 0 "U1" H 4850 7000 50  0000 L CNN
+F 1 "LM13700" H 4750 6900 50  0000 L CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4950 6975 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 4950 6975 50  0001 C CNN
 	5    5250 6950
@@ -90,10 +90,10 @@ POS
 Text Label 5800 7250 0    50   ~ 0
 NEG
 Wire Wire Line
-	5150 7250 5700 7250
+	5150 7250 5400 7250
 Connection ~ 5150 7250
 Wire Wire Line
-	5150 6650 5700 6650
+	5150 6650 5400 6650
 Connection ~ 5150 6650
 Text Label 1050 4750 0    50   ~ 0
 IN_2
@@ -1067,4 +1067,35 @@ Wire Wire Line
 	10250 5700 10350 5700
 Wire Wire Line
 	10350 5700 10350 5150
+$Comp
+L Device:C C7
+U 1 1 5F15044E
+P 5400 6800
+F 0 "C7" H 5515 6846 50  0000 L CNN
+F 1 "100nF" H 5515 6755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 6650 50  0001 C CNN
+F 3 "~" H 5400 6800 50  0001 C CNN
+	1    5400 6800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 6650
+Wire Wire Line
+	5400 6650 5700 6650
+$Comp
+L Device:C C8
+U 1 1 5F151C78
+P 5400 7100
+F 0 "C8" H 5515 7146 50  0000 L CNN
+F 1 "100nF" H 5515 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 6950 50  0001 C CNN
+F 3 "~" H 5400 7100 50  0001 C CNN
+	1    5400 7100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 7250
+Wire Wire Line
+	5400 7250 5700 7250
+Wire Wire Line
+	5400 6950 5700 6950
+Connection ~ 5400 6950
 $EndSCHEMATC

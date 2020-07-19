@@ -657,7 +657,7 @@ L Connector:AudioJack2_SwitchT IN_CV_1
 U 1 1 5F0DE74F
 P 8300 1950
 F 0 "IN_CV_1" V 8286 2138 50  0000 L CNN
-F 1 "AudioJack2_SwitchT" V 8050 1750 50  0000 L CNN
+F 1 "AudioJack2_SwitchT" V 8050 1600 50  0000 L CNN
 F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8300 1950 50  0001 C CNN
 F 3 "~" H 8300 1950 50  0001 C CNN
 	1    8300 1950
@@ -670,7 +670,7 @@ L Connector:AudioJack2_SwitchT IN_CV_2
 U 1 1 5F0E8598
 P 9600 1950
 F 0 "IN_CV_2" V 9586 2138 50  0000 L CNN
-F 1 "AudioJack2_SwitchT" V 9350 1750 50  0000 L CNN
+F 1 "AudioJack2_SwitchT" V 9350 1600 50  0000 L CNN
 F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 1950 50  0001 C CNN
 F 3 "~" H 9600 1950 50  0001 C CNN
 	1    9600 1950
